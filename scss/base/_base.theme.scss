@@ -1,3 +1,4 @@
+@import "base.mixins";
 html {
 	background: $color1;
 	color: $color2;
@@ -6,7 +7,8 @@ html {
 a {
 	color: $color3;
 
-	&:hover {
+	@include hocus() {
+		
 		color: $color2;
 	}
 

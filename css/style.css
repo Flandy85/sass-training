@@ -14,28 +14,28 @@ body {
 }
 
 /* RGB */
-/* line 1, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
+/* line 2, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 html {
   background: #545e75;
   color: #63adf2;
 }
 
-/* line 6, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
+/* line 7, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 a {
   color: #a7cced;
 }
 
-/* line 9, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
-a:hover {
+/* line 11, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.mixins.scss */
+a:hover, a:focus {
   color: #63adf2;
 }
 
-/* line 14, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
+/* line 16, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 ul {
   margin: 0;
 }
 
-/* line 17, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
+/* line 19, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 ul li {
   padding: 0;
 }
@@ -105,7 +105,7 @@ blockquote {
 /* line 18, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/style.scss */
 .rounded-box {
   /*Extends properties from class .box*/
-  /*Variables $property and $value is defined where you are using them. */
+  /*Variables $property and $value is defined where you are using them. the 3 ... allows for mutliple values */
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;

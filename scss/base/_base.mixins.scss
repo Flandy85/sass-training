@@ -1,7 +1,14 @@
-@mixin vendor($property, $value) { /*Variables $property and $value is defined where you are using them. */
+@mixin vendor($property, $value...) { /*Variables $property and $value is defined where you are using them. the 3 ... allows for mutliple values */
 	
 	-webkit-#{$property}: $value;
 	-moz-#{$property}: $value;
 	-ms-#{$property}: $value;
 	#{$property}: $value;
+}
+
+@mixin hocus() {
+
+	&:hover, &:focus {
+		@content;
+	}
 }
