@@ -1,0 +1,24 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/base/_base.scss",
+		"../scss/base/_base.settings.scss",
+		"../scss/base/_base.fonts.scss",
+		"../scss/base/_base.palette.scss",
+		"../scss/base/_base.theme.scss",
+		"../scss/base/_base.mixins.scss"
+	],
+	"sourcesContent": [
+		"@import \"base/base\";\n\nblockquote {\n\tborder-left: 2px solid $color2;\n\tpadding-left: $spacing-normal;\n}\n\n\n.box {\n\tbackground: $color3;\n\tpadding: $spacing-normal;\n\n\t> p {\n\t\tmargin: 0;\n\t}\n}\n\n.rounded-box {\n\t@extend .box; /*Extends properties from class .box*/\n\n\t@include vendor(border-radius); /*Includes properties(border-radius) from the mixin vendor in base.mixins.scss*/\n}",
+		"@import \"base.settings\";\n@import \"base.fonts\";\n@import \"base.palette\";\n@import \"base.theme\";\n@import \"base.mixins\";\nbody {\n\t/*Set line heights*/\n\tline-height: $base-line-height;\n\n\t/*Set default font weight*/\n\tfont-weight: $font-weight-light;\n}\nh1,h2,h3,h4,h5,h6 {\n\n\t/*Set heading font weights*/\n\tfont-weight: $font-weight-heading;\n}\n\n/*Set heading sizes*/\nh1 { font-size: $header-size-1; }\nh2 { font-size: $header-size-2; }\nh3 { font-size: $header-size-3; }\nh4 { font-size: $header-size-4; }\nh5 { font-size: $header-size-5; }\nh6 { font-size: $header-size-6; }",
+		"//\n//\tBase setting\n//\n\n/*\n\tHigh level setting for the entire site\n\tto create relational sizing and\n\taesthically pleasing design\n*/\n\n$base-spacing-unit: 24px;\n$base-font-size: 16px;\n$base-line-height: $base-spacing-unit;\n\n// Spacing sizes\n$spacing-smaller: $base-spacing-unit / 3;\n$spacing-small: $base-spacing-unit / 2;\n$spacing-normal: $base-spacing-unit;\n$spacing-large: $base-spacing-unit * 1.5;\n$spacing-larger: $base-spacing-unit * 2;\n$spacing-largest: $base-spacing-unit * 3;\n\n\n /*Font sizes*/\n\n$font-xsmall: $base-font-size / 1.6;\n$font-small: $base-font-size / 1.3;\n$font-normal: $base-font-size;\n$font-large: $base-font-size * 1.5;\n$font-larger: $base-font-size * 2;\n$font-largest: $base-font-size * 3;\n\n /*Font weights*/\n$font-weight-light: 300;\n$font-weight-normal: 400;\n$font-weight-bold: 500;\n$font-weight-black: 700;\n$font-weight-heading: $font-weight-bold;\n\n /*Header sizes*/\n\n$header-size-1: $base-font-size * 2;\n$header-size-2: $base-font-size * 1.5;\n$header-size-3: $base-font-size * 1.35;\n$header-size-4: $base-font-size * 1.2;\n$header-size-5: $base-font-size;\n$header-size-6: $base-font-size * 0.9;\n",
+		"/*Using Quicksand font family*/\n\n@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');\n\nbody {\n\tfont-family: 'Quicksand', sans-serif;\n}",
+		"/* RGB */\n$color1: rgba(84, 94, 117, 1);\n$color2: rgba(99, 173, 242, 1);\n$color3: rgba(167, 204, 237, 1);\n$color4: rgba(48, 77, 109, 1);\n$color5: rgba(130, 160, 188, 1);",
+		"html {\n\tbackground: $color1;\n\tcolor: $color2;\n}\n\na {\n\tcolor: $color3;\n\n\t&:hover {\n\t\tcolor: $color2;\n\t}\n\n}\nul {\n\tmargin: 0;\n\n\tli {\n\t\tpadding: 0;\n\t}\n}\n",
+		"@mixin vendor($property) {\n\t\n\t-webkit-#{$property}: $spacing-normal * 1;\n\t-moz-#{$property}: $spacing-normal * 2;\n\t-ms-#{$property}: $spacing-normal;\n\t#{$property}: $spacing-normal;\n}"
+	],
+	"mappings": "AEIA;;;;EAIE;AAeD,cAAc;AASd,gBAAgB;AAOhB,gBAAgB;ACvCjB,+BAA+B;AAE/B,OAAO,CAAC,wEAAI;;AAEZ,AAAA,IAAI,CAAC;EACJ,WAAW,EAAE,uBAAwB;CACrC;;ACND,SAAS;;ACAT,AAAA,IAAI,CAAC;EACJ,UAAU,EDAF,OAAI;ECCZ,KAAK,EDAG,OAAI;CCCZ;;;AAED,AAAA,CAAC,CAAC;EACD,KAAK,EDHG,OAAI;CCSZ;;;AAPD,AAAA,CAAC,AAGC,MAAM,CAAC;EACP,KAAK,EDPE,OAAI;CCQX;;;AAGF,AAAA,EAAE,CAAC;EACF,MAAM,EAAE,CAAE;CAKV;;;AAND,AAGC,EAHC,CAGD,EAAE,CAAC;EACF,OAAO,EAAE,CAAE;CACX;;;AJbF,AAAA,IAAI,CAAC;EACJ,oBAAoB;EACpB,WAAW,ECGQ,IAAI;EDDvB,2BAA2B;EAC3B,WAAW,ECuBQ,GAAG;CDtBtB;;;AACD,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,CAAC;EAEjB,4BAA4B;EAC5B,WAAW,ECoBO,GAAG;CDnBrB;;AAED,qBAAqB;;AACrB,AAAA,EAAE,CAAC;EAAE,SAAS,ECsBE,IAAe;CDtBG;;;AAClC,AAAA,EAAE,CAAC;EAAE,SAAS,ECsBE,IAAe;CDtBG;;;AAClC,AAAA,EAAE,CAAC;EAAE,SAAS,ECsBE,MAAe;CDtBG;;;AAClC,AAAA,EAAE,CAAC;EAAE,SAAS,ECsBE,MAAe;CDtBG;;;AAClC,AAAA,EAAE,CAAC;EAAE,SAAS,ECZG,IAAI;CDYa;;;AAClC,AAAA,EAAE,CAAC;EAAE,SAAS,ECsBE,MAAe;CDtBG;;;ADtBlC,AAAA,UAAU,CAAC;EACV,WAAW,EAAE,GAAG,CAAC,KAAK,CIDd,OAAI;EJEZ,YAAY,EEMO,IAAI;CFLvB;;;AAGD,AAAA,IAAI,EASJ,AATA,YASY,CATP;EACJ,UAAU,EINF,OAAI;EJOZ,OAAO,EEAY,IAAI;CFKvB;;;AAPD,AAIG,IAJC,GAID,CAAC,EAKJ,AALG,YAKS,GALT,CAAC,CAAC;EACH,MAAM,EAAE,CAAE;CACV;;;AAGF,AAAA,YAAY,CAAC;EACE,sCAAsC;EMhBpD,qBAAoB,EAAU,IAAe;EAC7C,kBAAiB,EAAO,IAAe;EACvC,iBAAgB,EJMG,IAAI;EILvB,aAAY,EJKO,IAAI;EFUS,gFAAgF;CAChH",
+	"names": []
+}
