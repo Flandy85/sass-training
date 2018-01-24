@@ -1,0 +1,95 @@
+/*
+	High level setting for the entire site
+	to create relational sizing and
+	aesthically pleasing design
+*/
+/*Font sizes*/
+/*Font weights*/
+/*Header sizes*/
+/*Using Quicksand font family*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* RGB */
+html {
+  background: #545e75;
+  color: #63adf2;
+}
+
+a {
+  color: #a7cced;
+}
+
+a:hover {
+  color: #63adf2;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  padding: 0;
+}
+
+body {
+  /*Set line heights*/
+  line-height: 24px;
+  /*Set default font weight*/
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*Set heading font weights*/
+  font-weight: 500;
+}
+
+/*Set heading sizes*/
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 21.6px;
+}
+
+h4 {
+  font-size: 19.2px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14.4px;
+}
+
+blockquote {
+  border-left: 2px solid #63adf2;
+  padding-left: 24px;
+}
+
+.box, .rounded-box {
+  background: #a7cced;
+  padding: 24px;
+}
+
+.box > p, .rounded-box > p {
+  margin: 0;
+}
+
+.rounded-box {
+  /*Extends properties from class .box*/
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 48px;
+  -ms-border-radius: 24px;
+  border-radius: 24px;
+  /*Includes properties from the mixin vendor in base.mixins.scss*/
+}

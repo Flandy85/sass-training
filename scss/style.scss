@@ -1,0 +1,22 @@
+@import "base/base";
+
+blockquote {
+	border-left: 2px solid $color2;
+	padding-left: $spacing-normal;
+}
+
+
+.box {
+	background: $color3;
+	padding: $spacing-normal;
+
+	> p {
+		margin: 0;
+	}
+}
+
+.rounded-box {
+	@extend .box; /*Extends properties from class .box*/
+
+	@include vendor(border-radius); /*Includes properties from the mixin vendor in base.mixins.scss*/
+}

@@ -1,0 +1,7 @@
+@mixin vendor($property) {
+	
+	-webkit-#{$property}: $spacing-normal * 1;
+	-moz-#{$property}: $spacing-normal * 2;
+	-ms-#{$property}: $spacing-normal;
+	#{$property}: $spacing-normal;
+}
