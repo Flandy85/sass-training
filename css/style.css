@@ -8,32 +8,39 @@
 /*Header sizes*/
 /*Using Quicksand font family*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+/* line 5, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.fonts.scss */
 body {
   font-family: 'Quicksand', sans-serif;
 }
 
 /* RGB */
+/* line 1, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 html {
   background: #545e75;
   color: #63adf2;
 }
 
+/* line 6, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 a {
   color: #a7cced;
 }
 
+/* line 9, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 a:hover {
   color: #63adf2;
 }
 
+/* line 14, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 ul {
   margin: 0;
 }
 
+/* line 17, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.theme.scss */
 ul li {
   padding: 0;
 }
 
+/* line 6, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 body {
   /*Set line heights*/
   line-height: 24px;
@@ -41,55 +48,69 @@ body {
   font-weight: 300;
 }
 
+/* line 13, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   /*Set heading font weights*/
   font-weight: 500;
 }
 
 /*Set heading sizes*/
+/* line 20, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h1 {
   font-size: 32px;
 }
 
+/* line 21, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h2 {
   font-size: 24px;
 }
 
+/* line 22, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h3 {
   font-size: 21.6px;
 }
 
+/* line 23, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h4 {
   font-size: 19.2px;
 }
 
+/* line 24, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h5 {
   font-size: 16px;
 }
 
+/* line 25, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/base/_base.scss */
 h6 {
   font-size: 14.4px;
 }
 
+/* line 3, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/style.scss */
 blockquote {
   border-left: 2px solid #63adf2;
   padding-left: 24px;
 }
 
+/* line 9, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/style.scss */
 .box, .rounded-box {
   background: #a7cced;
   padding: 24px;
 }
 
+/* line 13, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/style.scss */
 .box > p, .rounded-box > p {
   margin: 0;
 }
 
+/* line 18, /Users/andersgustavsson/Documents/Sass-training/Sass-git-training/scss/style.scss */
 .rounded-box {
   /*Extends properties from class .box*/
+  /*Variables $property and $value is defined where you are using them. */
   -webkit-border-radius: 24px;
-  -moz-border-radius: 48px;
+  -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   border-radius: 24px;
-  /*Includes properties from the mixin vendor in base.mixins.scss*/
+  /*Includes properties(border-radius) from the mixin vendor in base.mixins.scss*/
 }
+
+/*# sourceMappingURL=../css/style.map */

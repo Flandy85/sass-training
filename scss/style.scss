@@ -18,5 +18,5 @@ blockquote {
 .rounded-box {
 	@extend .box; /*Extends properties from class .box*/
 
-	@include vendor(border-radius); /*Includes properties from the mixin vendor in base.mixins.scss*/
+	@include vendor(border-radius, $spacing-normal); /*Includes properties(border-radius) from the mixin vendor in base.mixins.scss*/
 }

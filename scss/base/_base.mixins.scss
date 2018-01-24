@@ -1,7 +1,7 @@
-@mixin vendor($property) {
+@mixin vendor($property, $value) { /*Variables $property and $value is defined where you are using them. */
 	
-	-webkit-#{$property}: $spacing-normal * 1;
-	-moz-#{$property}: $spacing-normal * 2;
-	-ms-#{$property}: $spacing-normal;
-	#{$property}: $spacing-normal;
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	#{$property}: $value;
 }
